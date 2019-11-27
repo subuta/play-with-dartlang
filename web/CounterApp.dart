@@ -6,6 +6,7 @@ class CounterApp {
 
   CounterApp() {
     Element body = querySelector('body');
+    body.innerHtml = '';
     body.append(createElement());
   }
 

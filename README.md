@@ -18,6 +18,9 @@ brew install dart
 # Install stagehand(Project generator)
 pub global activate stagehand
 
+# Enable webdev(for web developent)
+pub global activate webdev
+
 # Generate web files.
 # Already done it for you :)
 # stagehand web-simple
