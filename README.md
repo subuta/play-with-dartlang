@@ -1,6 +1,8 @@
 # play-with-dartlang
 Dart based Counter App example.
 
+Based on: [TodoMVC implementation](https://github.com/tastejs/todomvc/tree/gh-pages/examples/vanilladart)
+
 Created from templates made available by Stagehand under a BSD-style
 [license](https://github.com/dart-lang/stagehand/blob/master/LICENSE).
 
@@ -23,8 +25,8 @@ pub global activate stagehand
 # Install dependencies
 pub get
 
-# Start web
-webdev serve
+# Start web (with HMR)
+webdev serve --auto restart
 
 # Build for production
 webdev build
