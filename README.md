@@ -4,8 +4,6 @@ Dart based Counter App example.
 Created from templates made available by Stagehand under a BSD-style
 [license](https://github.com/dart-lang/stagehand/blob/master/LICENSE).
 
-Uses [parcel](https://github.com/parcel-bundler/parcel) & [parcel-plugin-dart](parcel-plugin-dart) for faster development.
-
 ### How to setup
 
 #### Setup dart
@@ -21,20 +19,16 @@ pub global activate stagehand
 # Generate web files.
 # Already done it for you :)
 # stagehand web-simple
-```
 
-#### Setup Node.js
-
-- Node.js must be installed(Instruction details are skipped).
-
-```bash
 # Install dependencies
-npm i
-```
+pub get
 
-#### Develop
+# Start web
+webdev serve
 
-```bash
-# Will start parcel bundler with dart-lang support.
-npm start
+# Build for production
+webdev build
+
+# Start production server(by serve(Node.js server that does serving static files))
+cd build && npx serve -l 4000
 ```
